@@ -12,10 +12,10 @@ import guru.springframework.norris.chuck.ChuckNorrisQuotes;
 public class JokeServiceImpl implements JokeService {
 	
 	private final ChuckNorrisQuotes quotes;
-	
-	public JokeServiceImpl() {
+
+	public JokeServiceImpl(final ChuckNorrisQuotes quotes) {
 		super();
-		this.quotes = new ChuckNorrisQuotes();
+		this.quotes = quotes;
 	}
 
 	@Override
